@@ -1,0 +1,36 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 5px 10px 15px 20px;
+  /* ?px은 4개의 모서리 전체, 동일값
+  ?px/?px/?px/?px은 각각. 사각형에서 왼쪽 위 모서리부터 시계방향으로 하나씩 순서대로 값 */
+  margin: 40px;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+
+  transition-property: border-radius, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.clicked {
+  border-radius: 16px;
+  background-color: pink;
+}
+
+.box.btn {
+  border: 0;
+  width: 300px;
+  height: 120px;
+  border-radius: 24px;
+  box-shadow: 2px 4px 8px rgb(155, 30, 134);
+  /* x축 y축 블러 색상 */
+  margin: 16px;
+}
+
+.cat_img {
+  display: block;
+  width: 200px;
+}
